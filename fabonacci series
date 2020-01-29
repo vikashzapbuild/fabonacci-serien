@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a=0,b=1,n,t,i;
+    cout<<"Enter the number to calculate the fabonacci series: ";
+    cin>>n;
+    cout<<n<<endl;
+    for(i=0;i<=n;i++){
+    if(i==0)
+    {
+        cout<<a;
+        continue;
+    }
+    if(i==1){
+        cout<<b;
+        continue;
+    }
+    t=a+b;
+    a=b;
+    b=t;
+    cout<<t;
+}
+    return 0;
+}
